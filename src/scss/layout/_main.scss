@@ -1,0 +1,25 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.main_link {
+
+    text-decoration-line: none;
+}
+
+.article2 {
+flex-direction: grid;
+grid-template-columns: 1fr 1fr 1fr;
+border: 0.2rem solid gray;
+}
+
+
+.button_link {
+    text-transform: uppercase;
+    text-decoration-line: none;
+}
