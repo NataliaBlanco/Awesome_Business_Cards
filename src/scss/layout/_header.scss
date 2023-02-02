@@ -1,2 +1,17 @@
 .header {
+    background-color: $white-Four;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-logo {
+        margin:95px 0 35.4px;
+        width: 250px;
+        height: 63px;
+        @media all and(min-width: 768px){
+        margin:350px 0 31px;
+        width: 419px;
+        height: 105px;
+            
+        }
+    }
 }
