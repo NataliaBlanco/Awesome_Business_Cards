@@ -1,2 +1,9 @@
 .footer {
+  height: 110px;
+  background-color: white;
+}
+.footer-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
