@@ -165,4 +165,33 @@ table {
   font-family: 'Open Sans', sans-serif;
   color: grey; }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+
+.main_link {
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none; }
+
+.article2 {
+  flex-direction: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 0.2rem solid gray; }
+
+.button_link {
+  text-transform: uppercase;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
 /*# sourceMappingURL=main.css.map */
