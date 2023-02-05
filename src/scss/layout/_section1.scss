@@ -1,0 +1,106 @@
+.preview {
+    width: 100vw;
+    height: 457px;
+    background-image: linear-gradient(to bottom, $silver, $pale-grey);
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    .reset {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: normal;
+        width: 75px;
+        height: 30px;
+        margin-top: 38px;
+        background-color: transparent;
+        border: solid 1px $white-Two;
+        border-radius: 15px;
+
+        .far { 
+            width: 11px;
+            height: 20px;
+            color: $gunmetal;
+        }
+
+        .p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            color: $gunmetal;
+            /*font-family: meter la fuente*/
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 240px;
+        height: 329px;
+        margin-top: 20px;
+        border-radius: 2px;
+        background-color: white;
+        box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+
+        .name-card {
+            display: grid;
+            grid-template-columns: 5px 1fr;
+            grid-template-rows: 1fr 1fr;
+            background-color: green;
+            width: 100%;
+            height: 75px;
+
+            .rectangle {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 3;
+                margin-top: 23px;
+                width: 100%;
+                height: 42px;
+                background-color: $dirty-blue;
+            }
+
+            .name {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                justify-content: center
+            }
+
+            .role {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+        }
+
+        
+    }
+
+    .photo-card {
+        width: 100%;
+        height: 200px;
+        background-color: lightcoral;
+       /* background-image: ;*/
+    }
+
+    .links-card {
+        display: flex;
+        flex-direction: row;
+
+        .li {
+            list-style-type: none;
+        }
+        /*hacer contenedores en html para meter dentro cada icono*/
+    }
+
+
+}
+
