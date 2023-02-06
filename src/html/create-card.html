@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Awesome Profile-Cards</title>
-    <!-- Google Fonts
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Awesome Profile-Cards</title>
+  <!-- Google Fonts
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     -->
-    <!-- Icons
+  <!-- Icons
     
     -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/favicon.png" />
 
-  <body>
-    <include src="./partials/header-create-card.html"></include>
-    <include src="./partials/section1.html"></include>
-    <include src="./partials/form1.html"></include>
-    <include src="./partials/form2.html"></include>
-    <include src="./partials/form3.html"></include>
-    <include src="./partials/footer.html"></include>
-    <script src="./assets/js/main.js"></script>
-  </body>
+</head>
+
+<body>
+  <include src="./partials/header-create-card.html"></include>
+  <include src="./partials/section1.html"></include>
+  <form class="form">
+    <fieldset class="fieldset1">
+      <legend class="box-legend">
+        <i class="far fa-object-ungroup groupobject"></i>
+        <h2 class="title-fieldset1">diseña</h2>
+        <i class="fas fa-angle-up arrow"></i>
+      </legend>
+      <div>
+        <include src="./partials/form1.html"></include>
+      </div>
+    </fieldset>
+  </form>
+
+
+  <include src="./partials/form2.html"></include>
+  <include src="./partials/form3.html"></include>
+  <include src="./partials/footer.html"></include>
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
