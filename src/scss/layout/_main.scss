@@ -1,25 +1,74 @@
 .main {
+    background-color: $white-Four;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
-    
+   
+    &-title {
+        color: $dull-orange;
+        font-family: 'Merriweather', serif;;
+        font-size: 1.92rem;
+    }
+    &-paragraph {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.28rem;
+        color:$dark-gn-blue;
+        width: 264px;
+        height: 38px;
+    }
+    &-article2 {
+        width: 268px;
+        height: 73px;
+        border: 0.2rem solid #e173342a;
+        border-radius: 0.4rem;
+        margin-top: 18px;
+    }
+    &-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+         gap: 3rem;
+        margin: 1.8rem;  
+        list-style: none;       
+    }
+    &-list-item {
+        display: flex;
+        flex-direction: column;
+    }
+    &-link {
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.28rem;
+        color: $gunmetal;
+    }
 }
 
-.main_link {
-
-    text-decoration-line: none;
+.icon {
+    color: $dull-orange;
+    font-size: 2rem;
 }
 
-.article2 {
-flex-direction: grid;
-grid-template-columns: 1fr 1fr 1fr;
-border: 0.2rem solid gray;
+.article3 {
+    margin: 38px 0 30px;
 }
-
-
+.button {
+    background-color: $dirty-blue;
+    width: 129px;
+    height: 42px;
+    border-radius: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .button_link {
     text-transform: uppercase;
     text-decoration-line: none;
+    color: $white-Two;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    
 }
+
