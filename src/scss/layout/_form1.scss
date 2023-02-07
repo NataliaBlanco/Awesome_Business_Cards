@@ -1,1 +1,55 @@
+.pallete {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.radio {
+  margin: 10px 10px;
+}
+.p1_clr1 {
+  width: 30px;
+  height: 25px;
+  background-color: $dark-gn-blue;
+}
+.p1_clr2 {
+  width: 30px;
+  height: 25px;
+  background-color: $dirty-blue;
+}
+.p1_clr3 {
+  width: 30px;
+  height: 25px;
+  background-color: $hospital-green;
+}
+.p2_clr1 {
+  width: 30px;
+  height: 25px;
+  background-color: $dried-blood;
+}
+.p2_clr2 {
+  width: 30px;
+  height: 25px;
+  background-color: $rusty-red;
+}
+.p2_clr3 {
+  width: 30px;
+  height: 25px;
+  background-color: $tomato;
+}
 
+.p3_clr1 {
+  width: 30px;
+  height: 25px;
+  background-color: $slate;
+}
+.p3_clr2 {
+  width: 30px;
+  height: 25px;
+  background-color: $faded-orange;
+}
+.p3_clr3 {
+  width: 30px;
+  height: 25px;
+  background-color: $light-grey-blue;
+}

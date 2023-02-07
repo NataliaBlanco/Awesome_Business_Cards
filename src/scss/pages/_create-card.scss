@@ -1,14 +1,14 @@
 .form {
   background-image: linear-gradient(to bottom, $white-Four, $white-Two, 12%);
 }
-.fieldset1 {
+.fieldset {
   border: 0;
   border-bottom: 3px solid $white-Three;
   margin: 0 30px;
   padding: 0 0 10px 0;
 }
 
-.title-fieldset1 {
+.title-fieldset {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -30,12 +30,13 @@
 }
 .arrow {
   font-size: 1.8rem;
-  position: relative;
-  left: 88%;
   color: $gunmetal;
 }
 
-.groupobject {
+/* .arrow-collapsed {
+  transform: rotate(180deg) translate(0, 10px);
+} */
+.legend_icon {
   font-size: 1.8rem;
   color: $dull-orange;
 }
