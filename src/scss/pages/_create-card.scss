@@ -1,9 +1,13 @@
-.form {
+.form1_box {
   background-image: linear-gradient(to bottom, $white-Four, $white-Two, 12%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
 .fieldset {
   border: 0;
-  border-bottom: 3px solid $white-Three;
+  border-bottom: 1px solid $white-Three;
   margin: 0 30px;
   padding: 0 0 10px 0;
 }
@@ -24,6 +28,7 @@
 }
 
 .box-legend {
+  padding: 15px 0 0 0;
   width: 100%;
   display: flex;
   flex-direction: row;

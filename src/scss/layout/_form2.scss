@@ -1,6 +1,19 @@
 .fill_in {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: center padding;
+}
+.desc_labels {
+  line-height: 3;
+  color: $dark-gn-blue;
+}
+.input_box {
+  border: 1px solid $hospital-green;
+}
+.button {
+  width: 100px;
+  height: 25px;
+  background-color: $dull-orange;
+  border-radius: 5px;
 }
