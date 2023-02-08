@@ -10,6 +10,79 @@
 html {
   font-size: 62.5%; }
 
+.pallete {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center; }
+
+.radio {
+  margin: 10px 10px; }
+
+.p1_clr1 {
+  width: 30px;
+  height: 25px;
+  background-color: #114e4e; }
+
+.p1_clr2 {
+  width: 30px;
+  height: 25px;
+  background-color: #438792; }
+
+.p1_clr3 {
+  width: 30px;
+  height: 25px;
+  background-color: #a2deaf; }
+
+.p2_clr1 {
+  width: 30px;
+  height: 25px;
+  background-color: #420101; }
+
+.p2_clr2 {
+  width: 30px;
+  height: 25px;
+  background-color: #bd1010; }
+
+.p2_clr3 {
+  width: 30px;
+  height: 25px;
+  background-color: #e95626; }
+
+.p3_clr1 {
+  width: 30px;
+  height: 25px;
+  background-color: #3e5b65; }
+
+.p3_clr2 {
+  width: 30px;
+  height: 25px;
+  background-color: #eab052; }
+
+.p3_clr3 {
+  width: 30px;
+  height: 25px;
+  background-color: #a0c0cf; }
+
+.fill_in {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center padding; }
+
+.desc_labels {
+  line-height: 3;
+  color: #114e4e; }
+
+.input_box {
+  border: 1px solid #a2deaf; }
+
+.button {
+  width: 100px;
+  height: 25px;
+  background-color: #e17334;
+  border-radius: 5px; }
+
 .preview {
   width: 100vw;
   height: 457px;
@@ -102,7 +175,7 @@ html {
 .footer {
   margin: 20px 0 0 0;
   height: 120px;
-  background-color: white; }
+  background-color: #ffffff; }
 
 .footer-container {
   margin: auto;
@@ -114,41 +187,148 @@ html {
 
 .school-logo {
   width: 100px;
-  height: 40px;
-  padding: 0 0 20px 0; }
+  height: 40px; }
 
 .footer-text {
   padding: 10px 0;
-  font-size: 16px;
+  font-size: 1.4rem;
   font-family: 'Open Sans', sans-serif;
   color: grey; }
 
+@media all and (min-width: 768px) {
+  .footer {
+    margin: 20px 0 0 0;
+    height: 60px;
+    background-color: #ffffff; }
+  .footer-container {
+    margin: auto;
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+  .school-logo {
+    width: 103px;
+    height: 37px;
+    margin: 0 0 0 386px; } }
+
+@media all and (min-width: 1024px) {
+  .school-logo {
+    width: 103px;
+    height: 37px;
+    margin: 0 0 0 640px; } }
+
 .main {
+  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center; }
+  .main-title {
+    color: #e17334;
+    font-family: 'Merriweather', serif;
+    font-size: 1.92rem; }
+  .main-paragraph {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.28rem;
+    color: #114e4e;
+    width: 264px;
+    height: 38px; }
+  .main-article2 {
+    width: 268px;
+    height: 73px;
+    border: 0.2rem solid #e173342a;
+    border-radius: 0.4rem;
+    margin-top: 18px; }
+  .main-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+    margin: 1.8rem;
+    list-style: none; }
+  .main-list-item {
+    display: flex;
+    flex-direction: column; }
+  .main-link {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.28rem;
+    color: #54585a; }
 
-.main_link {
-  -webkit-text-decoration-line: none;
-  text-decoration-line: none; }
+.icon {
+  color: #e17334;
+  font-size: 2rem; }
 
-.article2 {
-  flex-direction: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  border: 0.2rem solid gray; }
+.article3 {
+  margin: 38px 0 30px; }
+
+.button {
+  background-color: #438792;
+  width: 129px;
+  height: 42px;
+  border-radius: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .button_link {
   text-transform: uppercase;
   -webkit-text-decoration-line: none;
-  text-decoration-line: none; }
+  text-decoration-line: none;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem; }
+
+.form1_box {
+  background-image: linear-gradient(to bottom, #f5f5f5, #ffffff, 12%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.fieldset {
+  border: 0;
+  border-bottom: 1px solid #d8d8d8;
+  margin: 0 30px;
+  padding: 0 0 10px 0; }
+
+.title-fieldset {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  padding: 0 0 10px 10px;
+  color: #54585a; }
+
+.design_text {
+  font-family: 'Open Sans', sans-serif;
+  color: #e17334;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 0 10px 0; }
+
+.box-legend {
+  padding: 15px 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+
+.arrow {
+  font-size: 1.8rem;
+  color: #54585a;
+  position: absolute;
+  left: 1230px; }
+
+/* .arrow-collapsed {
+  transform: rotate(180deg) translate(0, 10px);
+} */
+.legend_icon {
+  font-size: 1.8rem;
+  color: #e17334; }
 
 .header-create-card {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-color: #ffffff; }
   .header-create-card-logo {
     margin: 31px 79px 30px 40px;
     width: 201px;
