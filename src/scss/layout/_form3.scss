@@ -1,0 +1,17 @@
+.section_button {
+  box-shadow: 0 2px 3px 0 $black;
+  background-color: $dull-orange;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  .idcard {
+    color: $white-Two;
+    font-size: 20px;
+    padding: 0 2px 0 0;
+  }
+}

@@ -3,17 +3,20 @@
   flex-direction: column;
   justify-content: left;
   align-items: center padding;
-}
-.desc_labels {
-  line-height: 3;
-  color: $dark-gn-blue;
-}
-.input_box {
-  border: 1px solid $hospital-green;
-}
-.button {
-  width: 100px;
-  height: 25px;
-  background-color: $dull-orange;
-  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  .desc_labels {
+    line-height: 3;
+    color: $dark-gn-blue;
+  }
+  .input_box {
+    border: 1px solid $hospital-green;
+  }
+  .button {
+    width: 100px;
+    height: 25px;
+    background-color: $dull-orange;
+    border-radius: 5px;
+    color: $white-Two;
+    border: $hospital-green;
+  }
 }
