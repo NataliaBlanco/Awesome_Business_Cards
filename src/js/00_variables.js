@@ -2,10 +2,13 @@
 
 console.log('>> Ready :)');
 
-const lyDesign = document.querySelector('.js-design');
+const designLeyend = document.querySelector('.js-design');
 const arrowDesign = document.querySelector('.s-design-arrow');
-const lyFill = document.querySelector('.js-fill');
+const fillLeyend = document.querySelector('.js-fill');
 const arrowFill = document.querySelector('.js-fill-arrow');
-const lyShare = document.querySelector('.js-share');
+const shareLeyend = document.querySelector('.js-share');
+const designContent = document.querySelector('js-form1');
+const fillContent = document.querySelector('js-form2');
+const shareContent = document.querySelector('js-form3');
 
-
+//evento
