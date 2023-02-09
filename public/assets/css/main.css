@@ -107,9 +107,9 @@ html {
   flex-direction: column; }
   .preview .reset-btn {
     width: 240px; }
-    .preview .reset-btn margin
-.reset {
+    .preview .reset-btn .reset {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
       width: 75px;
@@ -118,17 +118,19 @@ html {
       background-color: transparent;
       border: solid 1px #ffffff;
       border-radius: 15px; }
-    .preview .reset-btn .far {
-      width: 11px;
-      height: 20px;
-      color: #54585a; }
-    .preview .reset-btn .p {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'OpenSans', sans-serif;
-      font-size: 1.2rem;
-      color: #54585a; }
+      .preview .reset-btn .reset .far {
+        width: 11px;
+        height: 20px;
+        color: #54585a;
+        padding-top: 3px;
+        margin-right: 8px; }
+      .preview .reset-btn .reset .p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'OpenSans', sans-serif;
+        font-size: 1.2rem;
+        color: #54585a; }
   .preview .card {
     display: flex;
     flex-direction: column;
@@ -170,6 +172,44 @@ html {
       background-image: url("../images/retrato-mujer.jpg");
       background-size: cover;
       background-position: center; }
+    .preview .card .preview-icons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 20px;
+      gap: 10px;
+      height: 54px;
+      width: 100%; }
+      .preview .card .preview-icons .hyperlink-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 32px;
+        width: 32px;
+        border: solid 2px #a2deaf;
+        border-radius: 50%; }
+        .preview .card .preview-icons .hyperlink-icon .icon {
+          height: 18px;
+          width: auto; }
+  .preview .card .palette1 .text-name-card {
+    border-left-color: #438792; }
+  .preview .card .palette1 .name {
+    color: #114e4e; }
+  .preview .card .palette1 .hyperlink-icon {
+    border-color: #a2deaf; }
+  .preview .card .palette2 .text-name-card {
+    border-left-color: #bd1010; }
+  .preview .card .palette2 .name {
+    color: #420101; }
+  .preview .card .palette2 .hyperlink-icon {
+    border-color: #e95626; }
+  .preview .card .palette3 .text-name-card {
+    border-left-color: #eab052; }
+  .preview .card .palette3 .name {
+    color: #3e5b65; }
+  .preview .card .palette3 .hyperlink-icon {
+    border-color: #a0c0cf; }
 
 .header {
   background-color: #f5f5f5;

@@ -6,30 +6,28 @@
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    
 
     .reset-btn {
         width: 240px;
-        margin
         
         .reset {
             display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             width: 75px;
             height: 30px;
             margin-top: 38px;
-            
             background-color: transparent;
             border: solid 1px $white-Two;
             border-radius: 15px;
-        }
-            
-    
+
             .far { 
                 width: 11px;
                 height: 20px;
                 color: $gunmetal;
+                padding-top: 3px;
+                margin-right: 8px;
             }
     
             .p {
@@ -39,10 +37,9 @@
                 font-family: 'OpenSans', sans-serif;
                 font-size: 1.2rem;
                 color: $gunmetal;
-                
             }
+        }
     }
-    
 
     .card {
         display: flex;
@@ -61,7 +58,7 @@
             background-color: $white-Two;
             width: 100%;
             height: 75px;
-           
+
             .text-name-card {
                 display: flex;
                 flex-direction: column;
@@ -84,7 +81,6 @@
                 .role {
                     font-size: 16px;
                     color: $gunmetal;
-
                 }
             }
         }
@@ -96,6 +92,78 @@
             background-size: cover;
             background-position: center;
         }
+
+        .preview-icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 20px;
+            gap: 10px;
+            height: 54px;
+            width: 100%;
+
+            .hyperlink-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 32px;
+                width: 32px;
+                border: solid 2px $hospital-green;
+                border-radius: 50%;
+
+                .icon {
+                    height: 18px;
+                    width: auto;
+                }
+                
+            }
+        }
+    }
+
+    .card .palette1 {
+
+        .text-name-card {
+            border-left-color: $dirty-blue;
+        }
+
+        .name {
+            color: $dark-gn-blue;
+        }
+        
+        .hyperlink-icon {
+            border-color: $hospital-green;
+        }   
+    }
+
+    .card .palette2 {
+
+        .text-name-card {
+            border-left-color: $rusty-red;
+        }
+
+        .name {
+            color: $dried-blood;
+        }
+        
+        .hyperlink-icon {
+            border-color: $tomato;
+        }   
+    }
+
+    .card .palette3 {
+
+        .text-name-card {
+            border-left-color: $faded-orange;
+        }
+
+        .name {
+            color: $slate;
+        }
+        
+        .hyperlink-icon {
+            border-color: $light-grey-blue;
+        }   
     }
 }
 
