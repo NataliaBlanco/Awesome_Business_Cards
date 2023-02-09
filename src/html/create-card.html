@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Awesome Profile-Cards</title>
-  <!-- Google Fonts
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome Profile-Cards</title>
+    <!-- Google Fonts
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     -->
-  <!-- Icons
+    <!-- Icons
     
     -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="icon" href="./assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
 
-</head>
-
-<body>
-  <include src="./partials/header-create-card.html"></include>
-  <main class="main-cards">
-    <include src="./partials/section1.html"></include>
-    <form class="form">
-      <fieldset class="fieldset">
-        <legend class="box-legend js-design">
-          <i class="far fa-object-ungroup legend_icon"></i>
-          <h2 class="title-fieldset">diseña</h2>
-          <i class="fas fa-angle-up arrow arrow-collapsed js-design-arrow"></i>
-        </legend>
-        <div class="form1_box collapse js-form1">
-          <include src="./partials/form1.html"></include>
-        </div>
-      </fieldset>
-      <fieldset class="fieldset">
-        <legend class="box-legend js-fill">
-          <i class="far fa-keyboard legend_icon"></i>
-          <h2 class="title-fieldset">rellena</h2>
-          <i class="fas fa-angle-up arrow arrow-collapsed js-fill-arrow"></i>
-        </legend>
-        <div class="form2_box  collapse js-form2">
-          <include src="./partials/form2.html"></include>
-        </div>
-      </fieldset>
-      <fieldset class="fieldset">
-        <legend class="box-legend js-share">
-          <i class="fas fa-share-alt legend_icon"></i>
-          <h2 class="title-fieldset">comparte</h2>
-          <i class="fas fa-angle-up arrow arrow-collapsed js-share-arrow"></i>
-        </legend>
-        <div class="form3_box collapse js-form3">
-          <include src="./partials/form3.html"></include>
-        </div>
-      </fieldset>
-    </form>
-  </main>
-  <include src="./partials/footer.html"></include>
-  <script src="./assets/js/main.js"></script>
-</body>
-
+  <body>
+    <include src="./partials/header-create-card.html"></include>
+    <main class="main-cards">
+      <include src="./partials/section1.html"></include>
+      <form class="form">
+        <fieldset class="fieldset">
+          <legend class="box-legend js-design">
+            <i class="far fa-object-ungroup legend_icon"></i>
+            <h2 class="title-fieldset">diseña</h2>
+            <i
+              class="fas fa-angle-up arrow arrow-collapsed js-design-arrow"
+            ></i>
+          </legend>
+          <div class="form1_box collapse js-form1">
+            <include src="./partials/form1.html"></include>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend class="box-legend js-fill">
+            <i class="far fa-keyboard legend_icon"></i>
+            <h2 class="title-fieldset">rellena</h2>
+            <i class="fas fa-angle-up arrow arrow-collapsed js-fill-arrow"></i>
+          </legend>
+          <div class="form2_box collapse js-form2">
+            <include src="./partials/form2.html"></include>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend class="box-legend js-share">
+            <i class="fas fa-share-alt legend_icon"></i>
+            <h2 class="title-fieldset">comparte</h2>
+            <i class="fas fa-angle-up arrow arrow-collapsed js-share-arrow"></i>
+          </legend>
+          <div class="form3_box collapse js-form3">
+            <include src="./partials/form3.html"></include>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <include src="./partials/footer.html"></include>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

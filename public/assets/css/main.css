@@ -181,35 +181,42 @@ html {
       gap: 10px;
       height: 54px;
       width: 100%; }
-      .preview .card .preview-icons .hyperlink-icon {
+      .preview .card .preview-icons .link-icon {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 32px;
         width: 32px;
         border: solid 2px #a2deaf;
-        border-radius: 50%; }
-        .preview .card .preview-icons .hyperlink-icon .icon {
-          height: 18px;
-          width: auto; }
+        border-radius: 50%;
+        text-decoration: none; }
+        .preview .card .preview-icons .link-icon .card-icon {
+          color: #114e4e;
+          font-size: 18px; }
   .preview .card .palette1 .text-name-card {
     border-left-color: #438792; }
   .preview .card .palette1 .name {
     color: #114e4e; }
   .preview .card .palette1 .hyperlink-icon {
     border-color: #a2deaf; }
+  .preview .card .palette1 .card-icon {
+    color: #114e4e; }
   .preview .card .palette2 .text-name-card {
     border-left-color: #bd1010; }
   .preview .card .palette2 .name {
     color: #420101; }
   .preview .card .palette2 .hyperlink-icon {
     border-color: #e95626; }
+  .preview .card .palette2 .card-icon {
+    color: #420101; }
   .preview .card .palette3 .text-name-card {
     border-left-color: #eab052; }
   .preview .card .palette3 .name {
     color: #3e5b65; }
   .preview .card .palette3 .hyperlink-icon {
     border-color: #a0c0cf; }
+  .preview .card .palette3 .card-icon {
+    color: #3e5b65; }
 
 .header {
   background-color: #f5f5f5;

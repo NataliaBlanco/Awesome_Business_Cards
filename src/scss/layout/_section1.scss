@@ -22,7 +22,7 @@
             border: solid 1px $white-Two;
             border-radius: 15px;
 
-            .far { 
+           .far { 
                 width: 11px;
                 height: 20px;
                 color: $gunmetal;
@@ -103,7 +103,7 @@
             height: 54px;
             width: 100%;
 
-            .hyperlink-icon {
+            .link-icon {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -111,12 +111,12 @@
                 width: 32px;
                 border: solid 2px $hospital-green;
                 border-radius: 50%;
+                text-decoration: none;
 
-                .icon {
-                    height: 18px;
-                    width: auto;
+              .card-icon {
+                    color: $dark-gn-blue;
+                    font-size: 18px;
                 }
-                
             }
         }
     }
@@ -133,7 +133,11 @@
         
         .hyperlink-icon {
             border-color: $hospital-green;
-        }   
+        } 
+        
+        .card-icon {
+            color: $dark-gn-blue;
+        }    
     }
 
     .card .palette2 {
@@ -149,6 +153,10 @@
         .hyperlink-icon {
             border-color: $tomato;
         }   
+
+        .card-icon {
+            color: $dried-blood;
+        }
     }
 
     .card .palette3 {
@@ -164,6 +172,10 @@
         .hyperlink-icon {
             border-color: $light-grey-blue;
         }   
+
+        .card-icon {
+            color: $slate;
+        }
     }
 }
 
