@@ -364,9 +364,7 @@ html {
       color: #e17334; }
     .fieldset .box-legend .arrow {
       font-size: 1.8rem;
-      color: #54585a;
-      position: absolute;
-      left: 1230px; }
+      color: #54585a; }
   .fieldset .form1_box {
     background-image: linear-gradient(to bottom, #f5f5f5, #ffffff, 12%);
     display: flex;
@@ -379,12 +377,12 @@ html {
     align-items: center;
     padding: 0 0 40px 0; }
 
-.collapse {
+.fieldset .collapse {
   display: none; }
 
-/* .arrow-collapsed {
-  transform: rotate(180deg) translate(0, 10px);
-} */
+.arrow-collapsed {
+  transform: rotate(180deg) translate(0, 10px); }
+
 .header-create-card {
   background-color: #ffffff; }
   .header-create-card-logo {

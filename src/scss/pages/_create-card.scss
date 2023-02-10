@@ -22,8 +22,7 @@
     .arrow {
       font-size: 1.8rem;
       color: $gunmetal;
-      position: absolute;
-      left: 1230px;
+     
     }
   }
 
@@ -43,9 +42,9 @@
   }
 }
 
-.collapse {
+.fieldset .collapse {
   display: none;
 }
-/* .arrow-collapsed {
+.arrow-collapsed {
   transform: rotate(180deg) translate(0, 10px);
-} */
+}
