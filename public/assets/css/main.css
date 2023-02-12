@@ -105,6 +105,14 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  @media all and (min-width: 768px) {
+    .preview {
+      margin: 1.8rem 2.2rem 1.8rem 2.2rem;
+      border-radius: 10px;
+      justify-content: center; } }
+  @media all and (min-width: 768px) {
+    .preview {
+      justify-content: baseline; } }
   .preview .reset-btn {
     width: 240px; }
     .preview .reset-btn .reset {
@@ -343,45 +351,61 @@ html {
   font-weight: 500;
   font-size: 1.6rem; }
 
-.fieldset {
+@media all and (min-width: 768px) {
+  .main-cards {
+    background-image: linear-gradient(to bottom, #f5f5f5, #ffffff 9%);
+    /* height: 80rem; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly; } }
+
+.main-cards .form .fieldset {
   border: 0;
   border-bottom: 1px solid #d8d8d8;
   margin: 0 30px;
   padding: 0 0 10px 0; }
-  .fieldset .box-legend {
+  .main-cards .form .fieldset .box-legend {
     padding: 15px 0 0 0;
     width: 100%;
     display: flex;
-    flex-direction: row; }
-    .fieldset .box-legend .title-fieldset {
+    flex-direction: row;
+    justify-content: space-between; }
+    .main-cards .form .fieldset .box-legend .title-fieldset {
+      width: 100%;
       font-family: 'Open Sans', sans-serif;
       font-size: 1.8rem;
       text-transform: uppercase;
       padding: 0 0 10px 10px;
       color: #54585a; }
-    .fieldset .box-legend .legend_icon {
+    .main-cards .form .fieldset .box-legend .legend_icon {
+      width: 1.8rem;
       font-size: 1.8rem;
       color: #e17334; }
-    .fieldset .box-legend .arrow {
+    .main-cards .form .fieldset .box-legend .arrow {
       font-size: 1.8rem;
       color: #54585a; }
-  .fieldset .form1_box {
+  .main-cards .form .fieldset .form1_box {
     background-image: linear-gradient(to bottom, #f5f5f5, #ffffff, 12%);
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-  .fieldset .form3_box {
+  .main-cards .form .fieldset .form3_box {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0 0 40px 0; }
 
-.fieldset .collapse {
+.main-cards .form .fieldset .collapse {
   display: none; }
 
-.arrow-collapsed {
+.main-cards .form .arrow-collapsed {
   transform: rotate(180deg) translate(0, 10px); }
+
+@media all and (min-width: 768px) {
+  .main-cards .form {
+    padding: 2rem 0 0 0;
+    width: 100%; } }
 
 .header-create-card {
   background-color: #ffffff; }

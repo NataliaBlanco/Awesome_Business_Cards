@@ -1,50 +1,73 @@
-.fieldset {
-  border: 0;
-  border-bottom: 1px solid $white-Three;
-  margin: 0 30px;
-  padding: 0 0 10px 0;
-  .box-legend {
-    padding: 15px 0 0 0;
-    width: 100%;
+.main-cards {
+  @media all and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, $white-Four, $white-Two 9%);
+    /* height: 80rem; */
     display: flex;
-    flex-direction: row;
-    .title-fieldset {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.8rem;
-      text-transform: uppercase;
-      padding: 0 0 10px 10px;
-      color: $gunmetal;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  .form {
+    .fieldset {
+      border: 0;
+      border-bottom: 1px solid $white-Three;
+      margin: 0 30px;
+      padding: 0 0 10px 0;
+      .box-legend {
+        padding: 15px 0 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .title-fieldset {
+          width: 100%;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+          padding: 0 0 10px 10px;
+          color: $gunmetal;
+        }
+        .legend_icon {
+          width: 1.8rem;
+          font-size: 1.8rem;
+          color: $dull-orange;
+        }
+        .arrow {
+          font-size: 1.8rem;
+          color: $gunmetal;
+        }
+      }
+
+      .form1_box {
+        background-image: linear-gradient(
+          to bottom,
+          $white-Four,
+          $white-Two,
+          12%
+        );
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .form3_box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 40px 0;
+      }
     }
-    .legend_icon {
-      font-size: 1.8rem;
-      color: $dull-orange;
+
+    .fieldset .collapse {
+      display: none;
     }
-    .arrow {
-      font-size: 1.8rem;
-      color: $gunmetal;
-     
+    .arrow-collapsed {
+      transform: rotate(180deg) translate(0, 10px);
+    }
+
+    @media all and (min-width: 768px) {
+      padding: 2rem 0 0 0;
+      width: 100%;
     }
   }
-
-  .form1_box {
-    background-image: linear-gradient(to bottom, $white-Four, $white-Two, 12%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .form3_box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 40px 0;
-  }
-}
-
-.fieldset .collapse {
-  display: none;
-}
-.arrow-collapsed {
-  transform: rotate(180deg) translate(0, 10px);
 }
