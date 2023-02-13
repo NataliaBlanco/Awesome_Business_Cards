@@ -1,6 +1,6 @@
 .footer {
   margin: 20px 0 0 0;
-  height: 120px;
+  height: 30vh;
   background-color: $white-Two;
 }
 .footer-container {
@@ -24,7 +24,7 @@
 @media all and (min-width: 768px) {
   .footer {
     margin: 20px 0 0 0;
-    height: 60px;
+    height: 15vh;
     background-color: $white-Two;
   }
 
