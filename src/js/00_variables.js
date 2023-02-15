@@ -24,7 +24,15 @@ const previewMail = document.querySelector('.js-preview-mail');
 const previewLinkedin = document.querySelector('.js-preview-linkedin');
 const previewGithub = document.querySelector('.js-preview-Github');
 
+const data = {
+  pallete: 1,
+  name: '',
+  job: '',
+  phone: '',
+  email: '',
+  linkedin: '',
+  github: '',
+  photo: '',
+};
 
 //evento
-
-
