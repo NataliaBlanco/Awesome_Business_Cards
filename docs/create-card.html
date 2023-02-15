@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome Profile-Cards</title>
+    <!-- Google Fonts
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    -->
+    <!-- Icons
+    
+    -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
+
+  <body>
+    <header class="header-create-card">
+        <img class="header-create-card-logo" src="./assets/images/logo-awesome-profile-cards.svg" alt="logo awesome profile-cards">
+       </header>
+    <main class="main-cards">
+      <section class="preview">
+        <div class="reset-btn">
+          <button type="reset" class="reset">
+            <i class="far fa-trash-alt"></i>
+            <p class="p">RESET</p>
+          </button>
+        </div>
+        <article class="card">
+          <section class="name-card">
+            <div class="text-name-card">
+              <h1 class="name js-preview-name">Nombre Apellido</h1>
+              <p class="role js-preview-job">Front-end developer</p>
+            </div>
+          </section>
+          <div class="photo-card"></div>
+          <nav class="preview-icons">
+            <a href="" class="link-icon js-preview-phone"
+              ><i class="fa-solid fa-mobile-screen-button card-icon"></i
+            ></a>
+            <a href="" class="link-icon js-preview-mail">
+              <i class="fa-regular fa-envelope card-icon"></i>
+            </a>
+            <a href="" class="link-icon js-preview-linkedin">
+              <i class="fa-brands fa-linkedin-in card-icon"></i>
+            </a>
+            <a href="" class="link-icon js-preview-github">
+              <i class="fa-brands fa-github-alt card-icon"></i>
+            </a>
+          </nav>
+        </article>
+      </section>
+
+      <form class="form">
+        <fieldset class="fieldset">
+          <legend class="box-legend js-design">
+            <i class="far fa-object-ungroup legend_icon"></i>
+            <h2 class="title-fieldset">diseña</h2>
+            <i class="fas fa-angle-up arrow js-design-arrow"></i>
+          </legend>
+          <div class="form1_box js-form1">
+            <h3 class="design_text">colores</h3>
+            <ul>
+                <li class="pallete">
+                    <input type="radio" class="radio" name="pllt">
+                    <div class="p1_clr1"></div>
+                    <div class="p1_clr2"></div>
+                    <div class="p1_clr3"></div>
+                </li>
+                <li class="pallete">
+                    <input type="radio" class="radio" name="pllt">
+                    <div class="p2_clr1"></div>
+                    <div class="p2_clr2"></div>
+                    <div class="p2_clr3"></div>
+                </li>
+                <li class="pallete">
+                    <input type="radio" class="radio" name="pllt">
+                    <div class="p3_clr1"></div>
+                    <div class="p3_clr2"></div>
+                    <div class="p3_clr3"></div>
+                </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend class="box-legend js-fill">
+            <i class="far fa-keyboard legend_icon"></i>
+            <h2 class="title-fieldset">rellena</h2>
+            <i class="fas fa-angle-up arrow js-fill-arrow"></i>
+          </legend>
+          <div class="form2_box js-form2">
+            <section class="fill_in">
+              <label for="fullName" class="desc_labels">Nombre completo</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                class="input_box js-input-name"
+              />
+              <label for="Position" class="desc_labels" class="input_box">Puesto</label>
+              <input
+                type="text"
+                id="Position"
+                name="Position"
+                class="input_box js-input-job"
+              />
+              <label for="file-upload" class="desc_labels">Imagen de Perfil</label>
+              <button type="button" class="button">Añadir Imagen</button>
+              <label for="emailAddress" class="desc_labels">Email</label>
+              <input
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+                class="input_box js-input-mail"
+              />
+              <label for="phone" class="desc_labels">Teléfono</label>
+              <input
+                type="number"
+                id="phone"
+                name="phone"
+                class="input_box js-input-phone"
+              />
+              <label for="network" class="desc_labels">Linkedin</label>
+              <input
+                type="url"
+                id="network"
+                name="network"
+                class="input_box js-input-linkedin"
+              />
+              <label for="" class="desc_labels">Github</label>
+              <input
+                type="number"
+                id="social"
+                name="phone"
+                class="input_box js-input-github"
+              />
+            </section>
+
+          </div>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend class="box-legend js-share">
+            <i class="fas fa-share-alt legend_icon"></i>
+            <h2 class="title-fieldset">comparte</h2>
+            <i class="fas fa-angle-up arrow js-share-arrow"></i>
+          </legend>
+          <div class="form3_box js-form3">
+            <button type="button" class="section_button">
+                <i class="far fa-address-card idcard"></i>
+                crear tarjeta
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <span class="footer-text">Awesome profile-cards @2018</span>
+            <img src="./assets/images/logo-adalab.png" alt="adalab" title="Awesome Profile profile-cards"
+                class="school-logo" />
+
+        </div>
+
+    </footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
