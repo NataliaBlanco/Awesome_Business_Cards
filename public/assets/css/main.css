@@ -96,6 +96,7 @@ html {
     justify-content: center;
     align-items: center; }
   .fill_in .photothumb {
+    background-size: cover;
     display: inline-block;
     height: 25px;
     width: 28px;
