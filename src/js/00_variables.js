@@ -23,6 +23,7 @@ const previewPhone = document.querySelector('.js-preview-phone');
 const previewMail = document.querySelector('.js-preview-mail');
 const previewLinkedin = document.querySelector('.js-preview-linkedin');
 const previewGithub = document.querySelector('.js-preview-Github');
+const radioPallete = document.querySelector('.js-palletes');
 
 const data = {
   pallete: 1,

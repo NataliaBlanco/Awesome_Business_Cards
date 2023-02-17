@@ -17,41 +17,15 @@ function updatePreview() {
   previewPhone.href = `tel:${data.phone}`;
   previewLinkedin.href = `${data.linkedin}`;
   previewGithub.href = `${data.github}`;
+
 }
 
-/* function handleInputName(event) {
-  data.name = inputName.value;
-  if (data.name === '') {
-    previewName.innerHTML = 'Nombre Apellidos';
-  } else {
-    previewName.innerHTML = data.name;
-  }
+function showColors(event) {
+  event.target.value;
+  console.log(event.target.value);
+  //faltan las condicionales, add and remove
 }
- */
-/* function handleInputMail(event) {
-  data.email = inputMail.value;
-  previewMail.href = `mailto:${data.email}`;
-}
-console.log('hola'); */
 
-/* function handleInputJob(event) {
-  data.job = inputJob.value;
-  if (data.job === '') {
-    previewJob.innerHTML = 'Front-end developer';
-  } else {
-    previewJob.innerHTML = data.job;
-  }
-
-} */
-
-/* function handleInputPhone(event) {
-  data.phone = inputPhone.value;
-  previewPhone.href = `tel:${data.phone}`;
-}
-function handleInputLinkedin(event) {
-  data.Linkedin = inputLinkedin.value;
-  previewLinkedin.href = `${data.Linkedin}`;
-} */
 
 function handleInputForm(event) {
   data[event.target.name] = event.target.value;
@@ -63,6 +37,7 @@ const allInputsList = document.querySelectorAll('.js_input');
 for (let i = 0; i < allInputsList.length; i++) {
   allInputsList[i].addEventListener('input', handleInputForm);
 }
+radioPallete.addEventListener('click', showColors);
 
 /* allInputsList.addEventListener('input', handleInputForm); */
 
