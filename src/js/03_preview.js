@@ -23,13 +23,19 @@ function updatePreview() {
 function showColors(event) {
   event.target.value;
   console.log(event.target.value);
-  //faltan las condicionales, add and remove
+  if (event.target.value === '2') {
+    previewPallete.classList.remove('pallete1');
+    previewPallete.classList.remove('pallete3');
+    previewPallete.classList.add('pallete2');
+  }
 }
 
 
 function handleInputForm(event) {
   data[event.target.name] = event.target.value;
   updatePreview();
+  showColors();
+  console.log('hola');
 }
 
 const allInputsList = document.querySelectorAll('.js_input');

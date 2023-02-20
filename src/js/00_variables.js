@@ -24,6 +24,7 @@ const previewMail = document.querySelector('.js-preview-mail');
 const previewLinkedin = document.querySelector('.js-preview-linkedin');
 const previewGithub = document.querySelector('.js-preview-Github');
 const radioPallete = document.querySelector('.js-palletes');
+const previewPallete = document.querySelector('.js-card');
 
 const data = {
   pallete: 1,
