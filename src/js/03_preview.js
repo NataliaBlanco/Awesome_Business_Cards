@@ -34,8 +34,6 @@ function showColors(event) {
 function handleInputForm(event) {
   data[event.target.name] = event.target.value;
   updatePreview();
-  showColors();
-  console.log('hola');
 }
 
 const allInputsList = document.querySelectorAll('.js_input');
