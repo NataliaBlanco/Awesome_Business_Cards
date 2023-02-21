@@ -21,15 +21,35 @@ function updatePreview() {
 }
 
 function showColors(event) {
-  event.target.value;
+  let pallete = event.target.value;
   console.log(event.target.value);
-  if (event.target.value === '2') {
-    previewPallete.classList.remove('pallete1');
-    previewPallete.classList.remove('pallete3');
-    previewPallete.classList.add('pallete2');
+  if (pallete === '2') {
+    previewPallete.classList.remove('palette1');
+    previewPallete.classList.remove('palette3');
+    previewPallete.classList.add('palette2');
+  } else if (pallete === '3') {
+    previewPallete.classList.remove('palette1');
+    previewPallete.classList.remove('palette2');
+    previewPallete.classList.add('palette3');
+  } else {
+    previewPallete.classList.remove('palette3');
+    previewPallete.classList.remove('palette2');
+    previewPallete.classList.add('palette1');
   }
 }
 
+function resetData() {
+  console.log('funciona');
+  data.name ='Nombre Apellidos';
+  previewMail.href = `mailto:${data.email}`;
+  previewJob.innerHTML = 'Front-end developer';
+  previewPhone.href = `tel:${data.phone}`;
+  previewLinkedin.href = `${data.linkedin}`;
+  previewGithub.href = `${data.github}`;
+   
+  }
+
+  
 
 function handleInputForm(event) {
   data[event.target.name] = event.target.value;
@@ -42,6 +62,8 @@ for (let i = 0; i < allInputsList.length; i++) {
   allInputsList[i].addEventListener('input', handleInputForm);
 }
 radioPallete.addEventListener('click', showColors);
+
+resetButton.addEventListener('click', resetData);
 
 /* allInputsList.addEventListener('input', handleInputForm); */
 

@@ -129,56 +129,56 @@
     }
   }
 
-  .card .palette1 {
+  .card.palette1 {
     .text-name-card {
       border-left-color: $dirty-blue;
     }
 
-    .name {
+    .name-card .text-name-card .name {
       color: $dark-gn-blue;
     }
 
-    .hyperlink-icon {
+    .preview-icons .link-icon {
       border-color: $hospital-green;
     }
 
-    .card-icon {
+    .preview-icons .link-icon .card-icon {
       color: $dark-gn-blue;
     }
   }
 
-  .card .palette2 {
+  .card.palette2 {
     .text-name-card {
       border-left-color: $rusty-red;
     }
 
-    .name {
+    .name-card .text-name-card .name {
       color: $dried-blood;
     }
 
-    .hyperlink-icon {
+     .preview-icons .link-icon {
       border-color: $tomato;
     }
 
-    .card-icon {
+    .preview-icons .link-icon .card-icon {
       color: $dried-blood;
     }
   }
 
-  .card .palette3 {
+  .card.palette3 {
     .text-name-card {
       border-left-color: $faded-orange;
     }
 
-    .name {
+    .name-card .text-name-card .name {
       color: $slate;
     }
 
-    .hyperlink-icon {
+    .preview-icons .link-icon {
       border-color: $light-grey-blue;
     }
 
-    .card-icon {
+    .preview-icons .link-icon .card-icon {
       color: $slate;
     }
   }

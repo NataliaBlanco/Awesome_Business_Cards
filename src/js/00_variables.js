@@ -17,7 +17,7 @@ const inputMail = document.querySelector('.js-input-mail');
 const inputPhone = document.querySelector('.js-input-phone');
 const inputLinkedin = document.querySelector('.js-input-linkedin');
 const inputGithub = document.querySelector('.js-input-github');
-const previewName = document.querySelector('.js-preview-name');
+let previewName = document.querySelector('.js-preview-name');
 const previewJob = document.querySelector('.js-preview-job');
 const previewPhone = document.querySelector('.js-preview-phone');
 const previewMail = document.querySelector('.js-preview-mail');
@@ -25,6 +25,7 @@ const previewLinkedin = document.querySelector('.js-preview-linkedin');
 const previewGithub = document.querySelector('.js-preview-Github');
 const radioPallete = document.querySelector('.js-palletes');
 const previewPallete = document.querySelector('.js-card');
+const resetButton = document.querySelector('.js-reset');
 
 const data = {
   pallete: 1,
