@@ -26,6 +26,9 @@ const previewGithub = document.querySelector('.js-preview-Github');
 const radioPallete = document.querySelector('.js-palletes');
 const previewPallete = document.querySelector('.js-card');
 const resetButton = document.querySelector('.js-reset');
+const fileField = document.querySelector('.js__profile-upload-btn');
+const profileImage = document.querySelector('.js__profile-image');
+const profilePreview = document.querySelector('.js__profile-preview');
 
 const data = {
   pallete: 1,

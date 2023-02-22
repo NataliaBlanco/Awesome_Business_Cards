@@ -17,7 +17,6 @@ function updatePreview() {
   previewPhone.href = `tel:${data.phone}`;
   previewLinkedin.href = `${data.linkedin}`;
   previewGithub.href = `${data.github}`;
-
 }
 
 function showColors(event) {
@@ -40,16 +39,24 @@ function showColors(event) {
 
 function resetData() {
   console.log('funciona');
-  data.name ='Nombre Apellidos';
-  previewMail.href = `mailto:${data.email}`;
+  previewName.innerHTML = 'Nombre Apellido';
+  previewMail.href = '';
   previewJob.innerHTML = 'Front-end developer';
-  previewPhone.href = `tel:${data.phone}`;
-  previewLinkedin.href = `${data.linkedin}`;
-  previewGithub.href = `${data.github}`;
-   
-  }
-
-  
+  previewPhone.href = '';
+  previewLinkedin.href = '';
+  previewGithub.href = '';
+  inputName.value = '';
+  inputJob.value = '';
+  inputMail.value = '';
+  inputPhone.value = '';
+  inputLinkedin.value = '';
+  inputGithub.value = '';
+  profilePreview.style.backgroundImage = '';
+  profileImage.style.backgroundImage = '';
+  previewPallete.classList.remove('palette3');
+  previewPallete.classList.remove('palette2');
+  previewPallete.classList.add('palette1');
+}
 
 function handleInputForm(event) {
   data[event.target.name] = event.target.value;
