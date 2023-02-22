@@ -31,28 +31,28 @@
     <main class="main-cards">
       <section class="preview">
         <div class="reset-btn">
-          <button type="reset" class="reset">
+          <button type="reset" class="reset js-reset">
             <i class="far fa-trash-alt"></i>
             <p class="p">RESET</p>
           </button>
         </div>
-        <article class="card">
+        <article class="card js-card">
           <section class="name-card">
             <div class="text-name-card">
               <h1 class="name js-preview-name">Nombre Apellido</h1>
               <p class="role js-preview-job">Front-end developer</p>
             </div>
           </section>
-          <div class="photo-card"></div>
+          <div class="photo-card js__profile-preview" ></div>
           <nav class="preview-icons">
             <a href="" class="link-icon js-preview-phone"><i class="fa-solid fa-mobile-screen-button card-icon"></i></a>
             <a href="" class="link-icon js-preview-mail" target="_blank">
-              <i class="fa-regular fa-envelope card-icon"></i>
+              <i class="fa-regular fa-envelope card-icon "></i>
             </a>
             <a href="" class="link-icon js-preview-linkedin" target="_blank">
               <i class="fa-brands fa-linkedin-in card-icon"></i>
             </a>
-            <a href="" class="link-icon js-preview-github">
+            <a href="" class="link-icon js-preview-Github">
               <i class="fa-brands fa-github-alt card-icon"></i>
             </a>
           </nav>
@@ -67,21 +67,21 @@
           </legend>
           <div class="form1_box js-form1">
             <h3 class="design_text">colores</h3>
-            <ul>
-                <li class="pallete">
-                    <input type="radio" class="radio" name="pllt">
+            <ul class="js-palletes">
+                <li class="pallete ">
+                    <input type="radio" class="radio js-pallete-1" name="pllt" value="1">
                     <div class="p1_clr1"></div>
                     <div class="p1_clr2"></div>
                     <div class="p1_clr3"></div>
                 </li>
-                <li class="pallete">
-                    <input type="radio" class="radio" name="pllt">
+                <li class="pallete ">
+                    <input type="radio" class="radio js-pallete-2" name="pllt" value="2">
                     <div class="p2_clr1"></div>
                     <div class="p2_clr2"></div>
                     <div class="p2_clr3"></div>
                 </li>
-                <li class="pallete">
-                    <input type="radio" class="radio" name="pllt">
+                <li class="pallete ">
+                    <input type="radio" class="radio js-pallete-3" name="pllt" value="3">
                     <div class="p3_clr1"></div>
                     <div class="p3_clr2"></div>
                     <div class="p3_clr3"></div>
@@ -98,19 +98,26 @@
           <div class="form2_box js-form2">
             <section class="fill_in">
               <label for="fullName" class="desc_labels">Nombre completo</label>
-              <input type="text" id="fullName" name="fullName" class="input_box js-input-name" />
+              <input type="text" id="name" name="name" class="input_box js-input-name js_input" placeholder="Nombre y Apellidos" />
               <label for="Position" class="desc_labels" class="input_box">Puesto</label>
-              <input type="text" id="Position" name="Position" class="input_box js-input-job" />
-              <label for="file-upload" class="desc_labels">Imagen de Perfil</label>
-              <button type="button" class="button">Añadir Imagen</button>
-              <label for="emailAddress" class="desc_labels">Email</label>
-              <input type="email" id="emailAddress" name="emailAddress" class="input_box js-input-mail" />
+              <input type="text" id="job" name="job" class="input_box js-input-job js_input" placeholder="Puesto
+              " />
+              <li class="desc_labels_list">
+                <label for="photo-upload" class="desc_labels">Imagen de Perfil</label>
+                <label for="photo-upload" class="photo-tag-button">Añadir Imagen</label>
+                <input type="file" name="photo" class="button js__profile-upload-btn" id="photo-upload"><span class="photothumb js__profile-image"></span>
+              </li>
+              <label for=" emailAddress" class="desc_labels">Email</label>
+              <input type="email" id="email" name="email" class="input_box js-input-mail js_input" placeholder="Email@gmail.com
+              " />
               <label for="phone" class="desc_labels">Teléfono</label>
-              <input type="number" id="phone" name="phone" class="input_box js-input-phone" />
+              <input type="number" id="phone" name="phone" class="input_box js-input-phone js_input" placeholder="658426697" />
               <label for="network" class="desc_labels">Linkedin</label>
-              <input type="url" id="network" name="network" class="input_box js-input-linkedin" />
+              <input type="url" id="linkedin" name="linkedin" class="input_box js-input-linkedin js_input"
+                placeholder="https://linkedin.com/in/Pepita" />
               <label for="" class="desc_labels">Github</label>
-              <input type="number" id="social" name="phone" class="input_box js-input-github" />
+              <input type="url" id="github" name="github" class="input_box js-input-github js_input" placeholder="@Pepita
+              " />
             </section>
           </div>
         </fieldset>
@@ -121,10 +128,14 @@
             <i class="fas fa-angle-up arrow js-share-arrow"></i>
           </legend>
           <div class="form3_box js-form3">
-            <button type="button" class="section_button">
-                <i class="far fa-address-card idcard"></i>
-                crear tarjeta
-            </button>
+            <div class=" share-box">
+                <button type="button" class="section_button js-btn-create">
+                    <i class="far fa-address-card idcard"></i>
+                    crear tarjeta
+                </button>
+                <a class=" url-link js-url-link" href="" target="_blank"><p class=" text-url js-url-text"></p></a>
+            </div>
+
           </div>
         </fieldset>
       </form>
