@@ -1,6 +1,5 @@
 'use strict';
 
-console.log('>> Ready :)');
 //funciones
 
 closeAllSections();
@@ -13,8 +12,6 @@ function closeAllSections() {
   arrowDesign.classList.remove('arrow-collapsed');
   arrowFill.classList.remove('arrow-collapsed');
   arrowShare.classList.remove('arrow-collapsed');
-
-  console.log('hola');
 }
 function openDesignSection() {
   designContent.classList.remove('collapse');

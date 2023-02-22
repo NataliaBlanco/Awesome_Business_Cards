@@ -1,6 +1,22 @@
 'use strict';
 
-console.log('>> Ready :)');
+
+const data = {
+  palette: 1,
+  name: '',
+  job: '',
+  phone: '',
+  email: '',
+  linkedin: '',
+  github: '',
+  photo: '',
+  
+};
+
+function handleInputForm(event) {
+  data[event.target.name] = event.target.value;
+  updatePreview();
+}
 
 function updatePreview() {
   if (data.name === '') {
@@ -17,28 +33,27 @@ function updatePreview() {
   previewPhone.href = `tel:${data.phone}`;
   previewLinkedin.href = `${data.linkedin}`;
   previewGithub.href = `${data.github}`;
+
 }
 
 function showColors(event) {
   let pallete = event.target.value;
-  console.log(event.target.value);
   if (pallete === '2') {
-    previewPallete.classList.remove('palette1');
-    previewPallete.classList.remove('palette3');
-    previewPallete.classList.add('palette2');
+    previewPalette.classList.remove('palette1');
+    previewPalette.classList.remove('palette3');
+    previewPalette.classList.add('palette2');
   } else if (pallete === '3') {
-    previewPallete.classList.remove('palette1');
-    previewPallete.classList.remove('palette2');
-    previewPallete.classList.add('palette3');
+    previewPalette.classList.remove('palette1');
+    previewPalette.classList.remove('palette2');
+    previewPalette.classList.add('palette3');
   } else {
-    previewPallete.classList.remove('palette3');
-    previewPallete.classList.remove('palette2');
-    previewPallete.classList.add('palette1');
+    previewPalette.classList.remove('palette3');
+    previewPalette.classList.remove('palette2');
+    previewPalette.classList.add('palette1');
   }
 }
 
 function resetData() {
-  console.log('funciona');
   previewName.innerHTML = 'Nombre Apellido';
   previewMail.href = '';
   previewJob.innerHTML = 'Front-end developer';
@@ -53,15 +68,12 @@ function resetData() {
   inputGithub.value = '';
   profilePreview.style.backgroundImage = '';
   profileImage.style.backgroundImage = '';
-  previewPallete.classList.remove('palette3');
-  previewPallete.classList.remove('palette2');
-  previewPallete.classList.add('palette1');
+  previewPalette.classList.remove('palette3');
+  previewPalette.classList.remove('palette2');
+  previewPalette.classList.add('palette1');
 }
 
-function handleInputForm(event) {
-  data[event.target.name] = event.target.value;
-  updatePreview();
-}
+
 
 const allInputsList = document.querySelectorAll('.js_input');
 
