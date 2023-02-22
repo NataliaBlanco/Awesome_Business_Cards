@@ -8,16 +8,20 @@ function handleClickCreate(event) {
     fetch('https://dev.adalab.es/api/card/',
         {
             method: 'POST',
-            headers: {'content-type':'aplication/json',},
+            headers: {'content-type':'application/json',},
             body: JSON.stringify(data),
         })
         .then((response) => response.json()) 
         .then(data => {
             if ( data.success === false) {
                 console.log(data)
+                urltext.innerHTML = 'Debes rellenar todos los campos'
             } else {
                 console.log(data)
-                //direccion y twitter
+                btnCreate.classList.add('hidden');
+                urltext.innerHTML = data.cardURL;
+                urlLink.href = data.cardURL;
+                
            }
         });    
 }

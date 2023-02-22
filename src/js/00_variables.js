@@ -9,6 +9,8 @@ const arrowShare = document.querySelector('.js-share-arrow');
 const designContent = document.querySelector('.js-form1');
 const fillContent = document.querySelector('.js-form2');
 const shareContent = document.querySelector('.js-form3');
+const urltext = document.querySelector('.js-url-text');
+const urlLink = document.querySelector('.js-url-link');
 
 const inputName = document.querySelector('.js-input-name');
 const inputJob = document.querySelector('.js-input-job');
@@ -31,6 +33,16 @@ const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
 
-
+const data = {
+    palette: 1,
+    name: '',
+    job: '',
+    phone: '',
+    email: '',
+    linkedin: '',
+    github: '',
+    photo: '',
+    
+  };
 
 //evento

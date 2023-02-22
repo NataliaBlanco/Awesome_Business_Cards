@@ -1,3 +1,9 @@
+.share-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .section_button {
   box-shadow: 0 2px 3px 0 $black;
   background-color: $dull-orange;
@@ -14,4 +20,20 @@
     font-size: 20px;
     padding: 0 2px 0 0;
   }
+}
+
+.text-url {
+  
+  font-family: 'Open Sans', sans-serif;
+  color: $dark-gn-blue;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.url-link {
+ text-decoration: none;
+}
+
+.hidden {
+  display: none;
 }

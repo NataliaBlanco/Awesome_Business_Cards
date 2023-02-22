@@ -105,6 +105,11 @@ html {
     left: 118px;
     top: -25px; }
 
+.share-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; }
+
 .section_button {
   box-shadow: 0 2px 3px 0 #000000;
   background-color: #e17334;
@@ -120,6 +125,18 @@ html {
     color: #ffffff;
     font-size: 20px;
     padding: 0 2px 0 0; }
+
+.text-url {
+  font-family: 'Open Sans', sans-serif;
+  color: #114e4e;
+  font-size: 15px;
+  font-weight: 700; }
+
+.url-link {
+  text-decoration: none; }
+
+.hidden {
+  display: none; }
 
 .preview {
   width: 100vw;
