@@ -1,5 +1,16 @@
 'use strict';
 
+function renderSectionShare() {
+    
+    let html = `
+    <h2 class="js__h2">La tarjeta ha sido creada:</h2>
+    <a class="js__link_card" href="${data.cardURL}">${data.cardURL}</a>
+    <button class="js__twitter_button">
+      <i class="fab fa-twitter"></i> Compartir en Twitter<a href=""></a>
+    </button>
+    <hr class="js__hr" />`;
+    cardResult.innerHTML = html;
+}
 
 function handleClickCreate(event) {
     event.preventDefault();
@@ -14,13 +25,12 @@ function handleClickCreate(event) {
         .then((response) => response.json()) 
         .then(data => {
             if ( data.success === false) {
-                console.log(data)
+                
                 urltext.innerHTML = 'Debes rellenar todos los campos'
             } else {
                 console.log(data)
                 btnCreate.classList.add('hidden');
-                urltext.innerHTML = data.cardURL;
-                urlLink.href = data.cardURL;
+                renderSectionShare();
                 
            }
         });    
