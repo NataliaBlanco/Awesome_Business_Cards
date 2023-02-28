@@ -1,10 +1,11 @@
 .footer {
-  margin: 20px 0 0 0;
+  margin: 5px 0 10px 0;
   background-color: $white-Two;
+  border-top: 1px solid $white-Three;
 }
 .footer-container {
   margin: auto;
-  padding: 10px 0 0 0;
+  padding: 5px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

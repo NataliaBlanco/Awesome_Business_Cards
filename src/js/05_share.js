@@ -14,7 +14,6 @@ function renderSectionShare() {
 
 function handleClickCreate(event) {
   event.preventDefault();
-  console.log(data);
   console.log('he hecho click');
   fetch('https://dev.adalab.es/api/card/', {
     method: 'POST',
@@ -24,22 +23,25 @@ function handleClickCreate(event) {
     .then((response) => response.json())
     .then((data) => {
       if (data.success === false) {
-        urltext.innerHTML = 'Debes rellenar todos los campos';
+        console.log('error');
+        
       } else {
-        console.log(data);
         btnCreate.classList.add('hidden');
         urlCard = data.cardURL;
         renderSectionShare();
       }
-      localStorage.setItem('saveCard', JSON.stringify(data));
+      
     });
+    localStorage.setItem('saveData', JSON.stringify(data));
+    
 }
+localStorage.setItem('saveData', JSON.stringify(data));
 
-function renderLclStorage() {
-  const SvCard = JSON.parse(localStorage.getItem(saveCard));
+function renderLCLStorage() {
+  const SvCard = JSON.parse(localStorage.getItem(saveData));
   renderSectionShare(SvCard);
-  updatePreview(SvCard);
-}
-renderLclStorage();
+    console.log(SvCard);
+  }
+
 
 btnCreate.addEventListener('click', handleClickCreate);
