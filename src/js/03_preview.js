@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 function handleInputForm(event) {
   data[event.target.name] = event.target.value;
   updatePreview();
@@ -22,7 +20,6 @@ function updatePreview() {
   previewPhone.href = `tel:${data.phone}`;
   previewLinkedin.href = `${data.linkedin}`;
   previewGithub.href = `${data.github}`;
-
 }
 
 function showColors(event) {
@@ -40,6 +37,7 @@ function showColors(event) {
     previewPalette.classList.remove('palette2');
     previewPalette.classList.add('palette1');
   }
+  data.palette = pallete;
 }
 
 function resetData() {
@@ -61,8 +59,6 @@ function resetData() {
   previewPalette.classList.remove('palette2');
   previewPalette.classList.add('palette1');
 }
-
-
 
 const allInputsList = document.querySelectorAll('.js_input');
 
