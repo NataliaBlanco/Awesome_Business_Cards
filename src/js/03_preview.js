@@ -18,8 +18,8 @@ function updatePreview() {
     previewJob.innerHTML = data.job;
   }
   previewPhone.href = `tel:${data.phone}`;
-  previewLinkedin.href = `${data.linkedin}`;
-  previewGithub.href = `${data.github}`;
+  previewLinkedin.href = `https://www.linkedin.com/in/${data.linkedin}`;
+  previewGithub.href = `https://github.com/${data.github}`;
 }
 
 function showColors(event) {

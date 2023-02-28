@@ -76,7 +76,10 @@ html {
     color: #114e4e;
     list-style-type: none; }
   .fill_in .input_box {
-    border: 1px solid #a2deaf; }
+    border: 1px solid #a2deaf;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 1.4rem; }
   .fill_in .button {
     display: none;
     /* width: 100px;
