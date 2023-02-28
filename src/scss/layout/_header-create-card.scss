@@ -1,11 +1,12 @@
 .header-create-card {
-    background-color: $white-Two;
-    &-logo {
-        margin:31px 79px 30px 40px;
-        width: 201px;
-        height: 50px;
-        @media all and(min-width: 768px){
-        margin: 31px 527px 30px 40px;  
-        }
+  background-color: $white-Two;
+  height: max-content;
+  &-logo {
+    margin: 31px 79px 30px 40px;
+    width: 201px;
+    height: 50px;
+    @media all and(min-width: 768px) {
+      margin: 31px 527px 30px 40px;
     }
+  }
 }
