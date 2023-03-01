@@ -1,6 +1,7 @@
 .share-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 15px;
 }
 
@@ -34,8 +35,16 @@
  text-decoration: none;
 }
 
+.url-link-twitter {
+  text-decoration: none;
+  color: white;
+ }
+
 .hidden {
-  display: none;
+  background-color: $white;
+  box-shadow: 0 0 4px 0  $white;
+  border: none;
+  align-self: center;
 }
 
 .js__div {

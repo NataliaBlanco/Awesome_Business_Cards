@@ -111,6 +111,7 @@ html {
 .share-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 15px; }
 
 .section_button {
@@ -138,8 +139,15 @@ html {
 .url-link {
   text-decoration: none; }
 
+.url-link-twitter {
+  text-decoration: none;
+  color: white; }
+
 .hidden {
-  display: none; }
+  background-color: #d5d5d5;
+  box-shadow: 0 0 4px 0 #d5d5d5;
+  border: none;
+  align-self: center; }
 
 .js__div {
   display: flex;

@@ -4,9 +4,10 @@ let urlCard = '';
 function renderSectionShare() {
   let html = `
     <h2 class="js__h2">La tarjeta ha sido creada:</h2>
-    <a class="js__link_card" href="${urlCard}">${urlCard}</a>
-    <button class="js__twitter_button">
-      <i class="fab fa-twitter"></i> Compartir en Twitter<a href=""></a>
+    <a class="js__link_card" href="${urlCard}" target="_blank">${urlCard}</a>
+   <button class="js__twitter_button">
+   <i class="fab fa-twitter"></i>
+   <a class="url-link-twitter" href="https://twitter.com/intent/tweet?text=This%20is%20my%20bussiness%20card:&url=${urlCard}" target="_blank"> Compartir en Twitter</a>
     </button>
     <hr class="js__hr" />`;
   cardResult.innerHTML = html;
@@ -24,7 +25,7 @@ function handleClickCreate(event) {
     .then((data) => {
       if (data.success === false) {
         console.log('error');
-        
+        console.log(data);
       } else {
         btnCreate.classList.add('hidden');
         urlCard = data.cardURL;
@@ -37,11 +38,11 @@ function handleClickCreate(event) {
 }
 //localStorage.setItem('saveData', JSON.stringify(data));
 
-function renderLCLStorage() {
+/*function renderLCLStorage() {
   const SvCard = JSON.parse(localStorage.getItem(saveData));
   renderSectionShare(SvCard);
     console.log(SvCard);
-  }
+  }*/
 
 
 btnCreate.addEventListener('click', handleClickCreate);
