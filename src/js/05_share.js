@@ -35,7 +35,7 @@ function handleClickCreate(event) {
     localStorage.setItem('saveData', JSON.stringify(data));
     
 }
-localStorage.setItem('saveData', JSON.stringify(data));
+//localStorage.setItem('saveData', JSON.stringify(data));
 
 function renderLCLStorage() {
   const SvCard = JSON.parse(localStorage.getItem(saveData));
